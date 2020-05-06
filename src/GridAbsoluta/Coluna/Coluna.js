@@ -148,7 +148,7 @@ export const Coluna = (
     Object.keys(configs).forEach(
         (estaChave)=>{
             let esteValor = configs[estaChave];
-            if(esteValor){
+            if(esteValor !== undefined){
                 classesFinaisAtual.push(`GridColuna${estaChave}${esteValor}`);
             }
         }
